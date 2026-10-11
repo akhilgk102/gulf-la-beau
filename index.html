@@ -23,6 +23,118 @@
     pointer-events: none !important;
   }
 </style>
+
+<style>
+/* ===== Gulf La-Bue theme: purple / yellow / blue / magenta (no gradients) ===== */
+:root, body {
+  --_colors---colors--theme-color-01: #e0087f !important; /* magenta  – buttons, hovers */
+  --_colors---colors--theme-color-02: #5b2a86 !important; /* purple   – feature band, prices */
+  --_colors---colors--neutral-04:     #1c2a86 !important; /* navy     – headings (logo text) */
+  --_colors---colors--neutral-03:     #5d5470 !important; /* muted text */
+  --_colors---colors--bg-color-02:    #f5eefb !important; /* light lavender sections */
+  --_colors---colors--bg-color-01:    #fcf9ff !important;
+  --_colors---colors--neutral-02:     #e8dcf5 !important; /* borders / soft fills */
+  --gl-yellow: #ffd93b;
+  --gl-blue:   #1d6fd1;
+  --gl-cyan:   #19a7d8;
+  --gl-purple-dark: #3a1a5c;
+}
+
+::selection { background: var(--gl-yellow); color: #3a1a5c; }
+
+/* ---- Header / nav: flat purple, no gradient ---- */
+.header-section:where(.w-variant-6a65ba25-91cd-2d14-2ab2-f90c2a70f016) {
+  background-image: none !important;
+  background-color: rgba(58, 26, 92, .78) !important;
+}
+.header-bg-color:where(.w-variant-6a65ba25-91cd-2d14-2ab2-f90c2a70f016) { background-color: var(--gl-purple-dark) !important; }
+.mega-menu-2._1:where(.w-variant-6a65ba25-91cd-2d14-2ab2-f90c2a70f016),
+.bottom-strip:where(.w-variant-6a65ba25-91cd-2d14-2ab2-f90c2a70f016) { background-color: var(--gl-purple-dark) !important; }
+.nav-grid-subtitle,
+.join-button { color: var(--gl-yellow) !important; }
+.nav-link:hover, .nav-dropdown-link:hover, .megamenu-nav-link:hover { color: var(--gl-yellow) !important; }
+.nav-link.w--current { color: var(--gl-yellow) !important; }
+.view-schedule-button { border-color: var(--gl-yellow) !important; color: var(--gl-yellow) !important; }
+.view-schedule-button:hover { background: var(--gl-yellow) !important; color: var(--gl-purple-dark) !important; }
+
+/* ---- Hero: solid overlay instead of gradient ---- */
+.hero-bg { background-image: none !important; background-color: rgba(58, 26, 92, .55) !important; }
+.hero-title { color: #fff !important; }
+
+/* ---- Buttons ---- */
+.button, .submit-button { background-color: #e0087f; }
+.button:hover { background-color: var(--gl-blue) !important; color: #fff !important; }
+.button:where(.w-variant-cbe720c2-badc-9433-d40d-e10d3bca8f49) { background-color: transparent !important; border-color: rgba(255,217,59,.7) !important; color: var(--gl-yellow) !important; }
+.button:where(.w-variant-cbe720c2-badc-9433-d40d-e10d3bca8f49):hover { background-color: var(--gl-yellow) !important; color: var(--gl-purple-dark) !important; }
+.button:where(.w-variant-2091adab-3e21-5b01-6da4-26377d6eabd9) { background-color: transparent !important; color: #5b2a86 !important; border-bottom-color: #5b2a86 !important; }
+.button:where(.w-variant-01aacfbc-30cd-4a95-767c-b9d20f32a4dc) { background-color: transparent !important; color: #1c2a86 !important; border-color: rgba(28,42,134,.25) !important; }
+.button:where(.w-variant-01aacfbc-30cd-4a95-767c-b9d20f32a4dc):hover { background-color: #e0087f !important; color: #fff !important; }
+
+/* ---- Purple feature band (yellow text like the menu card) ---- */
+.feature-section { background-color: #5b2a86; }
+.feature-item-text { color: var(--gl-yellow) !important; }
+.feature-icon-box { background-color: rgba(255,255,255,.14); }
+.why-choose-us-item-3 { background-color: #5b2a86; }
+.choose-us-point-item { color: var(--gl-yellow) !important; }
+.why-choose-us-img-wrap-1 { background-color: #e8dcf5; }
+
+/* ---- Blue "ribbon" tags (like the menu headings) ---- */
+.course-level, .step, .rl-tag, .rl-eyebrow, .blog-tag {
+  background: var(--gl-blue) !important;
+  color: #fff !important;
+  border-color: var(--gl-blue) !important;
+}
+.total-hours { color: #5b2a86; }
+.price { color: #e0087f; }
+
+/* ---- Rate list section ---- */
+.rl-section {
+  --rl-accent: #e0087f;
+  --rl-brown: #5b2a86;
+  --rl-ink: #1c2a86;
+  --rl-bg: #f5eefb;
+  --rl-soft: #e8dcf5;
+  --rl-muted: #5d5470;
+}
+.rl-tab.is-active { background: #5b2a86; color: var(--gl-yellow); }
+.rl-tab:hover { color: #e0087f; }
+.rl-tabs { border-color: #e8dcf5; }
+.rl-card { border-color: #e8dcf5; }
+.rl-card:hover { box-shadow: 0 18px 40px -18px rgba(91, 42, 134, .45); }
+.rl-row { border-bottom-color: #dccbee; }
+.rl-dots { border-bottom-color: #cdb6e4; }
+.rl-price { color: #5b2a86; }
+.rl-card--feature { background: #5b2a86; border-color: #5b2a86; }
+.rl-card--feature .rl-tag { background: var(--gl-yellow) !important; color: #3a1a5c !important; border-color: var(--gl-yellow) !important; }
+.rl-card--feature .rl-card-title,
+.rl-card--feature .rl-name { color: var(--gl-yellow); }
+.rl-card--feature .rl-price { color: #fff; }
+.rl-btn--solid { background: #e0087f; }
+.rl-btn--solid:hover { background: #1d6fd1; }
+.rl-btn--ghost { color: #1c2a86; border-color: rgba(28,42,134,.25); }
+.rl-btn--ghost:hover { background: #e0087f; border-color: #e0087f; color: #fff; }
+
+/* ---- Borders / lines ---- */
+.student-work-button, .step, .rl-eyebrow { border-color: #cdb6e4; }
+.work-line { background-color: #cdb6e4; }
+.step-count { background-color: #dccbee; }
+.step-circle { background-color: #e0087f; border-color: #f5eefb; }
+.step-line { background-color: #e0087f; }
+.faq-item { border-color: #dccbee; }
+.faq-line-1, .faq-line-2 { background-color: #5b2a86; }
+.footer-line { background-color: #dccbee; }
+.top-header { border-bottom-color: rgba(255,255,255,.2); }
+
+/* ---- CTA: remove gradient overlay ---- */
+.cta-section { background-color: #f5eefb; }
+.cta-overlay { background-image: none !important; background: transparent !important; }
+@media (max-width: 767px) { .cta-overlay { background: rgba(245,238,251,.88) !important; } }
+
+/* ---- Logo sizing (round logo) ---- */
+.navbar-brand-header { max-width: 84px; }
+.footer-logo { max-width: 110px; }
+.navbar-brand-logo, .footer-logo { object-fit: contain; }
+</style>
   <link href="https://cdn.prod.website-files.com/" rel="preconnect" crossorigin="anonymous">
   <title>Gulf La-Bue Beauty Parlour | Make Up &amp; Hair Style Studio, Alappuzha</title>
   <meta

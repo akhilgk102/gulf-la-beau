@@ -634,6 +634,7 @@
     </div>
   </section>
 
+
 <!-- ============ PRICE MENU · Gulf La-Bue ============ -->
 <section class="pm-section" id="rate-list-section">
   <div class="pm-wrap">
@@ -660,28 +661,99 @@
         <!-- BRIDAL & MAKE UP -->
         <div class="pm-panel is-active" id="pm-bridal">
           <div class="pm-tiers">
-            <div class="pm-tier"><small>Normal</small><b>20,000</b></div>
-            <div class="pm-tier"><small>Classic</small><b>22,000</b></div>
-            <div class="pm-tier"><small>HD</small><b>25,000</b></div>
-            <div class="pm-tier pm-tier--top"><small>Air Brush</small><b>40,000</b></div>
-          </div>
-          <p class="pm-tiers-note">Bridal packages, all with jewellery</p>
-          <div class="pm-cols">
-            <div class="pm-group">
-              <h3>Make up</h3>
+            <div class="pm-tier">
+              <small>Bridal Package</small><b>7,000</b>
               <ul>
-                <li><span>Party Make up</span><i></i><b>2,000</b></li>
-                <li><span>HD Bridal Make up</span><i></i><b>5,000 – 10,000</b></li>
+                <li>3 Time Bridal Makeup &amp; Hair Style</li>
+                <li>3 Time Bridal Jewellery</li>
+                <li>Saree Draping</li>
+                <li>Pre-Bridal Treatment</li>
+                <li>Full Body Waxing</li>
+                <li>Hair Spa</li>
+                <li>Hydra Facial</li>
+                <li>Shinner</li>
               </ul>
             </div>
-            <div class="pm-group">
-              <h3>Saree wearing</h3>
+            <div class="pm-tier">
+              <small>Royal Bridal Package</small><b>15,000</b>
               <ul>
-                <li><span>Saree Wearing Normal</span><i></i><b>1,000</b></li>
-                <li><span>Saree Bridal</span><i></i><b>3,000</b></li>
+                <li>3 Time Bridal Makeup &amp; Hair Style</li>
+                <li>3 Time Bridal Jewellery</li>
+                <li>Saree Draping</li>
+                <li>Pre-Bridal Treatment</li>
+                <li>Full Body Waxing</li>
+                <li>Hair Spa</li>
+                <li>Hydra Facial</li>
+                <li>Shinner</li>
+              </ul>
+            </div>
+            <div class="pm-tier pm-tier--top">
+              <small>Luxury Package</small><b>25,000</b>
+              <ul>
+                <li>3 Time Bridal Makeup &amp; Hair Style</li>
+                <li>3 Time Bridal Jewellery</li>
+                <li>Saree Draping</li>
+                <li>Pre-Bridal Treatment</li>
+                <li>Full Body Waxing</li>
+                <li>Hair Spa</li>
+                <li>Hydra Facial</li>
+                <li>Shinner</li>
               </ul>
             </div>
           </div>
+
+          <!-- Mobile only: shared includes list -->
+          <div class="pm-includes">
+            <h4>Every package includes</h4>
+            <ul>
+              <li>3 Time Bridal Makeup &amp; Hair Style</li>
+              <li>3 Time Bridal Jewellery</li>
+              <li>Saree Draping</li>
+              <li>Pre-Bridal Treatment</li>
+              <li>Full Body Waxing</li>
+              <li>Hair Spa</li>
+              <li>Hydra Facial</li>
+              <li>Shinner</li>
+            </ul>
+          </div>
+
+          <p class="pm-tiers-note">Package includes as per selection · Trial &amp; demo available</p>
+<div class="pm-cols">
+  <div class="pm-group">
+    <h3>Bridal makeover</h3>
+    <ul>
+      <li><span>Hindu Look</span><i></i><b>15,000</b></li>
+      <li><span>Christian Look</span><i></i><b>12,000</b></li>
+      <li><span>Muslim Look</span><i></i><b>15,000</b></li>
+    </ul>
+  </div>
+  <div class="pm-group">
+    <h3>Make up</h3>
+    <ul>
+      <li><span>Party Make up</span><i></i><b>2,000</b></li>
+      <li><span>HD Bridal Make up</span><i></i><b>5,000 – 10,000</b></li>
+      <li><span>Simple Makeup <small>makeup only</small></span><i></i><b>2,000</b></li>
+      <li><span>Guest Makeup <small>hair styling + makeup + saree</small></span><i></i><b>3,500</b></li>
+    </ul>
+  </div>
+  <div class="pm-group">
+    <h3>Occasion looks</h3>
+    <ul>
+      <li><span>Engagement Look</span><i></i><b>7,000</b></li>
+      <li><span>Reception Look</span><i></i><b>7,000</b></li>
+      <li><span>Baby Shower Makeover</span><i></i><b>8,000</b></li>
+      <li><span>Haldi Function</span><i></i><b>5,000</b></li>
+    </ul>
+  </div>
+  <div class="pm-group">
+    <h3>Saree wearing</h3>
+    <ul>
+      <li><span>Saree Wearing Normal</span><i></i><b>1,000</b></li>
+      <li><span>Saree Bridal</span><i></i><b>3,000</b></li>
+      <li><span>Saree Draping</span><i></i><b>1,200</b></li>
+    </ul>
+  </div>
+</div>
         </div>
 
         <!-- SKIN & CARE -->
@@ -926,7 +998,7 @@
 .pm-group li:hover span { color: #e0087f; }
 
 /* Bridal tiers */
-.pm-tiers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.pm-tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; align-items: start; }
 .pm-tier { text-align: center; padding: 22px 10px; border-radius: 18px; background: #f5eefb; border: 1px solid #e8dcf5; transition: transform .3s; }
 .pm-tier:hover { transform: translateY(-4px); }
 .pm-tier small { display: block; font: 600 12px/1 Inter, sans-serif; letter-spacing: 1.4px; text-transform: uppercase; color: #5d5470; margin-bottom: 10px; }
@@ -935,7 +1007,17 @@
 .pm-tier--top { background: #5b2a86; border-color: #5b2a86; }
 .pm-tier--top small { color: #ffd93b; }
 .pm-tier--top b { color: #fff; }
+
+.pm-tier ul { list-style: none; margin: 18px 0 0; padding: 16px 0 0; border-top: 1px dashed #cdb6e4; text-align: left; display: flex; flex-direction: column; gap: 8px; }
+.pm-tier li { position: relative; padding-left: 22px; font-size: 13.5px; line-height: 1.4; color: #3a1a5c; }
+.pm-tier li::before { content: "✓"; position: absolute; left: 0; color: #e0087f; font-weight: 700; }
+.pm-tier--top ul { border-top-color: rgba(255,255,255,.3); }
+.pm-tier--top li { color: #fff; }
+.pm-tier--top li::before { color: #ffd93b; }
 .pm-tiers-note { margin: 12px 0 36px; text-align: center; font-size: 13px; color: #5d5470; }
+
+/* Shared includes list (mobile only) */
+.pm-includes { display: none; }
 
 .pm-note { margin: 8px 0 0; padding-top: 20px; border-top: 1px solid #f0e6f8; font-size: 13.5px; color: #5d5470; text-align: center; }
 
@@ -977,9 +1059,22 @@
   .pm-title { font-size: 36px; }
   .pm-panels { padding: 26px 20px; border-radius: 22px; }
   .pm-cols { columns: 1; }
-  .pm-tiers { grid-template-columns: repeat(2, 1fr); }
+
+  .pm-tiers { grid-template-columns: 1fr; gap: 10px; }
+  .pm-tier { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; text-align: left; }
+  .pm-tier:hover { transform: none; }
+  .pm-tier small { margin: 0; }
+  .pm-tier b { font-size: 26px; }
+  .pm-tier ul { display: none; }
+
+  .pm-includes { display: block; margin-top: 16px; padding: 20px; border-radius: 18px; background: #f5eefb; border: 1px solid #e8dcf5; }
+  .pm-includes h4 { margin: 0 0 12px; font: 600 12px/1 Inter, sans-serif; letter-spacing: 1.4px; text-transform: uppercase; color: #5d5470; }
+  .pm-includes ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+  .pm-includes li { position: relative; padding-left: 22px; font-size: 13.5px; line-height: 1.4; color: #3a1a5c; }
+  .pm-includes li::before { content: "✓"; position: absolute; left: 0; color: #e0087f; font-weight: 700; }
 }
 </style>
+
 <!-- ============ REVIEWS v4 ============ -->
 <section class="rw-section">
   <div class="rw-head">
